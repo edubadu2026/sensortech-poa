@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SensorTech POA — Governança &amp; Compliance</title>
+  <title>SensorTech POA: Governança &amp; Compliance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -216,6 +216,31 @@
       .hero h1 { font-size: 28px; }
       h1 { font-size: 26px; }
     }
+
+    /* ─── Desafios Éticos ─── */
+    .group-landing { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 20px; margin-top: 8px; }
+    .gl-card { border-radius: 14px; overflow: hidden; cursor: pointer; text-decoration: none; color: inherit; display: block; transition: transform 0.2s, box-shadow 0.2s; }
+    .gl-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.18); }
+    .gl-card-top { padding: 28px 26px 18px; }
+    .gl-group { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; margin-bottom: 10px; color: white; }
+    .gl-valor { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 14px; background: rgba(255,255,255,0.2); color: white; }
+    .gl-title { font-family: 'DM Serif Display', serif; font-size: 19px; line-height: 1.35; color: white; }
+    .gl-card-bottom { background: white; padding: 16px 26px 20px; }
+    .gl-card-bottom p { font-size: 13px; color: #64748B; line-height: 1.5; margin: 0 0 10px; }
+    .gl-cta { font-size: 13px; font-weight: 700; }
+    .desafio-header { border-radius: 14px; padding: 36px 40px; margin-bottom: 28px; color: white; }
+    .desafio-valor-badge { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); display: inline-block; margin-bottom: 14px; }
+    .desafio-grupo-label { font-size: 12px; opacity: 0.65; margin-bottom: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; color: white; }
+    .desafio-header h1 { color: white; font-size: 32px; margin-bottom: 0; }
+    .desafio-context { background: white; border-radius: 12px; border: 1px solid #E2E8F0; padding: 32px; margin-bottom: 22px; }
+    .desafio-context p { margin-bottom: 14px; }
+    .desafio-context p:last-child { margin-bottom: 0; }
+    .desafio-tensao { border-radius: 12px; padding: 26px 30px; margin-bottom: 28px; border-left: 5px solid rgba(0,0,0,0.15); }
+    .desafio-tensao strong { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.75; }
+    .desafio-tensao p { font-size: 15px; line-height: 1.75; margin: 0; }
+    .desafio-pergunta { border-radius: 14px; padding: 36px 40px; text-align: center; margin-bottom: 8px; }
+    .desafio-pergunta .pq-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; margin-bottom: 16px; display: block; color: white; }
+    .desafio-pergunta h2 { font-family: 'DM Serif Display', serif; font-size: 26px; line-height: 1.45; margin: 0; color: white; }
   </style>
 </head>
 <body>
@@ -233,7 +258,7 @@
     <ul>
       <li><a href="#" class="active" onclick="show('inicio',this)"><span class="icon">🏠</span> Início</a></li>
       <li><a href="#" onclick="show('stakeholders',this)"><span class="icon">👥</span> Stakeholders</a></li>
-      <li><a href="#" onclick="show('desafios',this)"><span class="icon">⚡</span> Desafios</a></li>
+      <li><a href="#" onclick="show('desafios',this)"><span class="icon">⚡</span> Desafios Éticos</a></li>
       <li><a href="#" onclick="show('governanca',this)"><span class="icon">🏛</span> Governança</a></li>
       <li><a href="#" onclick="show('compliance',this)"><span class="icon">✅</span> Compliance</a></li>
     </ul>
@@ -253,37 +278,43 @@
   <div class="hero">
     <span class="tag">📍 Porto Alegre · RS</span>
     <h1>SensorTech Soluções Industriais</h1>
-    <p>Uma startup gaúcha de IoT industrial fundada por engenheiros da UFRGS — e que agora enfrenta dilemas reais de governança, conflito de interesses, transparência e a urgente necessidade de estruturar seu compliance.</p>
-    <div class="hero-meta">
-      <div class="meta-item"><strong>R$ 9,8 M</strong>Receita 2024</div>
-      <div class="meta-item"><strong>42</strong>Funcionários</div>
-      <div class="meta-item"><strong>18</strong>Clientes ativos</div>
-      <div class="meta-item"><strong>2015–2025</strong>Trajetória</div>
-    </div>
+    <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=900&q=80"
+         alt="SensorTech: IoT Industrial"
+         style="width:100%;max-width:680px;height:220px;object-fit:cover;border-radius:12px;margin:20px 0 0;display:block;opacity:0.88;" />
   </div>
 
-  <h2>Navegue pelo case</h2>
-  <p style="margin-bottom:0;color:#64748B;font-size:14px;">Selecione uma seção para explorar o conteúdo.</p>
   <div class="cards-grid">
-    <div class="card" onclick="show('stakeholders',null)">
-      <div class="card-icon">👥</div>
-      <h3>Stakeholders</h3>
-      <p>Os 12 atores que moldam a SensorTech — de investidores a reguladores.</p>
+    <div class="card" onclick="show('stakeholders',null)" style="padding:0;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=500&q=80"
+           alt="Stakeholders" style="width:100%;height:110px;object-fit:cover;display:block;" />
+      <div style="padding:18px 20px 20px;">
+        <h3>Gerenciando Stakeholders</h3>
+        <p>Os 11 atores que moldam a SensorTech: de investidores a reguladores.</p>
+      </div>
     </div>
-    <div class="card" onclick="show('desafios',null)">
-      <div class="card-icon">⚡</div>
-      <h3>Dilemas Gerenciais</h3>
-      <p>Quatro situações reais para discussão: contratação, salários, falha de produto e assédio.</p>
+    <div class="card" onclick="show('desafios',null)" style="padding:0;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80"
+           alt="Desafios Éticos" style="width:100%;height:110px;object-fit:cover;display:block;" />
+      <div style="padding:18px 20px 20px;">
+        <h3>Desafios Éticos</h3>
+        <p>Quatro situações reais para discussão: contratação, salários, falha de produto e assédio.</p>
+      </div>
     </div>
-    <div class="card" onclick="show('governanca',null)">
-      <div class="card-icon">🏛</div>
-      <h3>Governança</h3>
-      <p>Conflito de interesses, controles internos, deadlock societário e lacuna salarial.</p>
+    <div class="card" onclick="show('governanca',null)" style="padding:0;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80"
+           alt="Governança" style="width:100%;height:110px;object-fit:cover;display:block;" />
+      <div style="padding:18px 20px 20px;">
+        <h3>Governança</h3>
+        <p>Conflito de interesses, controles internos, deadlock societário e lacuna salarial.</p>
+      </div>
     </div>
-    <div class="card" onclick="show('compliance',null)">
-      <div class="card-icon">✅</div>
-      <h3>Compliance</h3>
-      <p>Três propostas de consultoria — os grupos debatem qual a SensorTech deve adotar.</p>
+    <div class="card" onclick="show('compliance',null)" style="padding:0;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=500&q=80"
+           alt="Compliance" style="width:100%;height:110px;object-fit:cover;display:block;" />
+      <div style="padding:18px 20px 20px;">
+        <h3>Compliance</h3>
+        <p>Três propostas de consultoria: os grupos debatem qual a SensorTech deve adotar.</p>
+      </div>
     </div>
   </div>
 
@@ -291,7 +322,7 @@
   <div class="narrative">
     <h2>Por que Governança &amp; Compliance?</h2>
     <p>A SensorTech cresceu rápido demais para sua estrutura de governança. Com R$ 9,8 M de receita, 42 funcionários e um investidor institucional (Criatec3) no cap table, a empresa opera ainda com processos informais herdados da fase de startup: decisões unilaterais de sócios, ausência de política de conflito de interesses, nenhum canal de denúncias e controles internos precários.</p>
-    <p>Os cenários deste case não são hipotéticos — são recorrentes em empresas de tecnologia em crescimento acelerado. A questão central que atravessa todas as seções é: <strong>até quando a agilidade justifica a ausência de estrutura?</strong></p>
+    <p>Os cenários deste case não são hipotéticos: são recorrentes em empresas de tecnologia em crescimento acelerado. A questão central que atravessa todas as seções é: <strong>até quando a agilidade justifica a ausência de estrutura?</strong></p>
   </div>
 </div>
 
@@ -302,58 +333,134 @@
   <a href="#" class="btn-home" onclick="show('inicio',null);return false;">🏠 Voltar ao Início</a>
   <div class="section-header">
     <div class="label">Seção 1</div>
-    <h1>Empresa &amp; Stakeholders</h1>
+    <h1>Gerenciando os Stakeholders da SensorTech</h1>
   </div>
 
   <div class="narrative">
-    <h2>A Trajetória da SensorTech (2015–2025)</h2>
-    <p>Em 2015, <strong>Rafael Costa</strong> e <strong>Thiago Mendes</strong> — engenheiros egressos do Instituto de Informática da <strong>UFRGS</strong> — fundaram a SensorTech Soluções Industriais com R$ 80 mil de capital próprio em um apartamento no bairro Petrópolis, Porto Alegre. O foco: sensores IoT de baixo custo para monitoramento preditivo de equipamentos industriais.</p>
-    <p>O primeiro protótipo alcançou 72% de acurácia na detecção de falhas em compressores. Em 2016, assinaram o primeiro contrato com a <strong>Metalsul Automação</strong> (Vale dos Sinos) e ingressaram na incubadora <strong>ZENIT da UFRGS</strong>. Em 2019, o contrato âncora com a <strong>REFAP — Refinaria Alberto Pasqualini</strong> (Petrobras, Canoas/RS) transformou a empresa.</p>
-    <div class="timeline">
-      <div class="tl-item"><div class="tl-year">2015</div><p>Fundação em Porto Alegre; protótipo com 72% de acurácia; incubação no ZENIT/UFRGS.</p></div>
-      <div class="tl-item"><div class="tl-year">2016</div><p>Primeiro cliente: Metalsul Automação (Vale dos Sinos); receita R$ 220 k.</p></div>
-      <div class="tl-item"><div class="tl-year">2018</div><p>Mudança para o TECNOPUC; equipe cresce para 14 pessoas; 6 clientes industriais.</p></div>
-      <div class="tl-item"><div class="tl-year">2019</div><p>Contrato REFAP (Petrobras/Canoas): R$ 2,1 M em 3 anos; representa 65% da receita.</p></div>
-      <div class="tl-item"><div class="tl-year">2021</div><p>Investimento Criatec3: R$ 3,5 M; fundadores retêm 60% da equity; 28 pessoas.</p></div>
-      <div class="tl-item"><div class="tl-year">2024</div><p>18 clientes ativos; REFAP = 40% da receita; R$ 9,8 M; 42 funcionários.</p></div>
-    </div>
+    <p>Em 2015, Rafael Costa e Thiago Mendes saíram da UFRGS com um protótipo de sensor IoT e R$ 80 mil de capital próprio. Instalaram-se num apartamento no bairro Petrópolis, em Porto Alegre, com um objetivo preciso: sensores de baixo custo para monitoramento preditivo de equipamentos industriais.</p>
+    <p>Um ano depois, assinaram o primeiro contrato com a Metalsul Automação, no Vale dos Sinos. Era pequeno, mas provava que o produto funcionava fora do laboratório. Em 2019, veio o salto: o contrato com a REFAP, refinaria da Petrobras em Canoas, transformou a empresa. De repente, a SensorTech tinha um cliente âncora que representava 65% da receita e um novo patamar de exigência técnica e operacional.</p>
+    <p>Em 2021, o Criatec3 entrou no quadro societário com R$ 3,5 milhões e 40% da participação societária. O capital acelerou o crescimento, mas trouxe junto uma exigência que os fundadores ainda não estavam prontos para atender.</p>
+    <p>Em 2024, com 42 funcionários, 18 clientes ativos e R$ 9,8 milhões de receita, Rafael percebeu que tomar decisões sem mapear quem seria afetado por elas estava se tornando um risco real. Um contrato mal comunicado com a REFAP. Uma demissão que gerou ruído na equipe técnica. Uma negociação com a ChipBrasil travada por falta de alinhamento interno.</p>
+    <p>Foi nesse contexto que <strong>Maria Fernanda Alves</strong> chegou à SensorTech. Com experiência consolidada em gestão e passagem pelo MBA da FGV, onde na disciplina de Governança e Compliance havia estudado ferramentas de gestão estratégica, ela assumiu uma posição ainda em definição: algo entre diretora e sócia, com acesso direto aos fundadores e mandato para estruturar o que a empresa nunca havia estruturado. Uma de suas primeiras provocações abriu um debate que ninguém esperava: <em>"Vocês sabem, de verdade, quem são os stakeholders da SensorTech e quanto poder e interesse cada um tem sobre o negócio?"</em></p>
+    <p>A pergunta não tinha resposta imediata. E foi esse silêncio que deu início ao processo de mapeamento que você verá a seguir.</p>
   </div>
 
   <div class="divider"></div>
-  <h2>Os 12 Stakeholders</h2>
-  <p style="margin-bottom:20px;color:#64748B;font-size:14px;">Mapeamento dos atores com poder de influência sobre a SensorTech.</p>
+  <h2 style="margin-bottom:8px;">Os 11 Stakeholders</h2>
+  <p style="margin-bottom:20px;color:#64748B;font-size:14px;">Para cada stakeholder, reflita: <strong>qual é o poder deste ator sobre a SensorTech?</strong> E <strong>qual é o seu nível de interesse nos resultados da empresa?</strong> Aloque-os na Matriz Poder x Interesse.</p>
   <div class="stakeholder-grid">
-    <div class="stakeholder-card"><div class="s-icon">🏭</div><div><h4>REFAP — Petrobras (Canoas/RS)</h4><p>Cliente âncora. 40% da receita. Alta dependência operacional e simbólica.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">🏢</div><div><h4>17 Clientes PME</h4><p>Indústrias gaúchas: metalurgia, celulose, agronegócio e manufatura. Base diversificada.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">🎯</div><div><h4>SkyMec Systems (SP)</h4><p>Prospecto estratégico. Contrato potencial de R$ 4,2 M. Decisão pendente.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">💼</div><div><h4>Criatec3 (Fundo de VC)</h4><p>Investidor com 40% da equity. Pressiona por governança formal e critérios ESG.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">👨‍💻</div><div><h4>Rafael Costa (CEO)</h4><p>Co-fundador. Perfil técnico-comercial. Concentra decisões estratégicas.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">👨‍🔬</div><div><h4>Thiago Mendes (CTO)</h4><p>Co-fundador. Responsável pelo produto. Central nos conflitos de governança.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">⚙️</div><div><h4>Equipe Técnica Sênior</h4><p>8 engenheiros. Alta retenção estratégica — portadores do know-how diferenciador.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">👷</div><div><h4>Funcionários Operacionais</h4><p>34 colaboradores em suporte, vendas, financeiro e logística.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">🔌</div><div><h4>ChipBrasil (Fornecedor Crítico)</h4><p>Único fornecedor qualificado dos microcontroladores. Ruptura pararia a produção.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">📦</div><div><h4>Demais Fornecedores</h4><p>Componentes, embalagens, logística. Risco coletivo de alta por variação cambial.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">📡</div><div><h4>ANATEL</h4><p>Regulador de telecomunicações. Homologação obrigatória dos sensores IoT.</p></div></div>
-    <div class="stakeholder-card"><div class="s-icon">🤝</div><div><h4>ABIoT</h4><p>Representação setorial. Acesso a editais de P&amp;D (EMBRAPII, FINEP).</p></div></div>
-  </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">🏭</div>
+      <div>
+        <h4>REFAP: Petrobras (Canoas/RS)</h4>
+        <p>Representa 40% da receita da SensorTech. Os sensores monitoram equipamentos críticos em refinaria: ambiente de alto risco regulatório (NR-13). Substituir a SensorTech levaria meses de requalificação. Um cancelamento de contrato seria devastador para a empresa.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: confiabilidade operacional e segurança industrial contínua.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">🏢</div>
+      <div>
+        <h4>17 Clientes PME</h4>
+        <p>Indústrias gaúchas de metalurgia, celulose, agronegócio e manufatura. Cada um representa entre 2% e 8% da receita. Individualmente, nenhum move o ponteiro da empresa: mas dependem das soluções IoT para monitoramento preditivo de seus equipamentos, sem alternativa local equivalente no curto prazo.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: continuidade do monitoramento e redução de paradas não planejadas.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">💼</div>
+      <div>
+        <h4>Criatec3 (Fundo de VC)</h4>
+        <p>Detém 40% da equity e direito de veto em contratos acima de R$ 200 k. O retorno do fundo depende diretamente da valorização da SensorTech. Pressiona ativamente por governança, ESG e preparação para a próxima rodada. Pode bloquear decisões estratégicas.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: retorno financeiro do investimento de R$ 3,5 M.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">👨‍💻</div>
+      <div>
+        <h4>Rafael Costa (CEO)</h4>
+        <p>Co-fundador com 30% das quotas. Concentra as decisões comerciais e estratégicas. A empresa é seu projeto de vida e principal fonte de renda. Tem autonomia formal para assinar contratos e liderar a operação: mas enfrenta o empasse com Thiago em decisões críticas.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: patrimônio pessoal, legado profissional e controle do negócio.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">👨‍🔬</div>
+      <div>
+        <h4>Thiago Mendes (CTO)</h4>
+        <p>Co-fundador com 30% das quotas. Responsável pela arquitetura tecnológica: o produto só existe porque ele existe. Detentor do know-how mais crítico da empresa. Central nos conflitos de governança e no deadlock societário. Sua saída seria tecnicamente irreparável no curto prazo.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: controle tecnológico, equity e direção do produto.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">⚙️</div>
+      <div>
+        <h4>Equipe Técnica Sênior</h4>
+        <p>8 engenheiros que carregam o conhecimento operacional do produto. Alta rotatividade do mercado de TI gaúcho (28%/ano) significa que são assediados por concorrentes constantemente. Individualmente têm pouca influência formal, mas uma saída coletiva comprometeria projetos inteiros.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: carreira, remuneração e ambiente de trabalho.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">👷</div>
+      <div>
+        <h4>Funcionários Operacionais</h4>
+        <p>34 colaboradores em suporte técnico, vendas, financeiro e logística. A SensorTech representa o emprego e a renda familiar para todos eles. Individualmente têm baixo poder de barganha e poucas alternativas equivalentes no mercado regional. Mas são os primeiros a sentir: e a comunicar: quando a cultura falha.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: estabilidade de emprego e condições de trabalho.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">🔌</div>
+      <div>
+        <h4>ChipBrasil (Fornecedor Crítico)</h4>
+        <p>Único fornecedor qualificado dos microcontroladores utilizados nos sensores. Uma ruptura no fornecimento pararia a produção da SensorTech em semanas. No entanto, a SensorTech representa apenas uma fração do portfólio da ChipBrasil, que atende dezenas de empresas de médio porte em todo o Brasil.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: receita de um cliente de porte médio entre muitos.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">📦</div>
+      <div>
+        <h4>Demais Fornecedores</h4>
+        <p>Componentes, embalagens e logística. São substituíveis: há alternativas no mercado para cada categoria. A SensorTech é um cliente de pequeno porte na carteira de cada um deles. A relação é transacional: entrega-pagamento, sem dependência mútua relevante.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: receita pontual de um cliente pequeno.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">📡</div>
+      <div>
+        <h4>ANATEL</h4>
+        <p>Regulador federal de telecomunicações. A homologação dos sensores IoT é obrigatória para operar: sem ela, nenhum produto pode ser comercializado. A ANATEL pode suspender certificações e impor multas severas. Contudo, a SensorTech é apenas uma das milhares de empresas no universo regulado: não há relação diferenciada.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: conformidade regulatória de um agente entre milhares.</p>
+      </div>
+    </div>
+
+    <div class="stakeholder-card">
+      <div class="s-icon">🤝</div>
+      <div>
+        <h4>ABIoT</h4>
+        <p>Associação Brasileira de IoT. Representa o setor junto a órgãos públicos e oferece acesso a editais de P&amp;D (EMBRAPII, FINEP). A SensorTech é um dos centenas de membros. A entidade não tem poder direto sobre as operações da empresa: e para a ABIoT, cada membro tem peso similar.</p>
+        <p style="font-size:12px;color:#1C4ED8;margin-top:6px;font-weight:600;">💡 O que está em jogo: um membro entre centenas, com contribuição associativa regular.</p>
+      </div>
+    </div>
+
+  </div><!-- /stakeholder-grid -->
 
   <div class="divider"></div>
-  <div class="narrative">
-    <h2>Estrutura Financeira (2024)</h2>
-    <table>
-      <thead><tr><th>Indicador</th><th>Valor</th><th>Observação</th></tr></thead>
-      <tbody>
-        <tr><td>Receita Total</td><td>R$ 9,8 M</td><td>Crescimento de 34% em relação a 2022</td></tr>
-        <tr><td>REFAP (% receita)</td><td>40%</td><td>Reduzida de 65% em 2019; ainda concentrada</td></tr>
-        <tr><td>Margem EBITDA</td><td>~18%</td><td>Pressionada por P&amp;D e folha crescente</td></tr>
-        <tr><td>Equity fundadores</td><td>60%</td><td>Criatec3 detém 40% após rodada 2021</td></tr>
-        <tr><td>Headcount</td><td>42 pessoas</td><td>Crescimento de 200% desde 2019</td></tr>
-        <tr><td>Contrato SkyMec (potencial)</td><td>R$ 4,2 M</td><td>Negociação em curso</td></tr>
-      </tbody>
-    </table>
+  <div style="text-align:center;padding:8px 0 4px;">
+    <a href="#" onclick="show('gabarito',null);return false;"
+       style="display:inline-flex;align-items:center;gap:10px;background:#1C4ED8;color:#F1F5F9;font-size:14px;font-weight:600;padding:14px 28px;border-radius:10px;text-decoration:none;letter-spacing:0.3px;">
+      ✅ Ver Gabarito da Matriz Poder x Interesse
+    </a>
   </div>
 </div>
 
+<!-- ════════════════════════════════════════
 <!-- ════════════════════════════════════════
      DESAFIOS
 ════════════════════════════════════════ -->
@@ -361,106 +468,204 @@
   <a href="#" class="btn-home" onclick="show('inicio',null);return false;">🏠 Voltar ao Início</a>
   <div class="section-header">
     <div class="label">Seção 2</div>
-    <h1>Dilemas Gerenciais</h1>
+    <h1>Desafios Éticos</h1>
   </div>
-  <p style="margin-bottom:28px;color:#64748B;">Quatro situações reais para discussão. Cada dilema apresenta opções concretas com suas tensões éticas e estratégicas.</p>
+  <p style="margin-bottom:28px;color:#64748B;">Cada grupo recebe um desafio diferente. Clique no card do seu grupo, leia a situação e responda à pergunta final.</p>
 
-  <!-- Dilema 1 -->
-  <div class="dilemma">
-    <div class="dilemma-header"><div class="dilemma-number">1</div><h3>Contratação sob viés — Lucas ou Adriana?</h3></div>
-    <div class="dilemma-body">
-      <p>A SensorTech precisa contratar um Engenheiro de Firmware Sênior com urgência. Dois candidatos finalistas com resultados equivalentes: <strong>Lucas Ferreira</strong> (pode iniciar imediatamente, background no Vale dos Sinos) e <strong>Adriana Oliveira</strong> (currículo levemente mais robusto, mas só inicia em 6 meses por licença de cuidados). Adriana seria a primeira engenheira sênior da empresa.</p>
-      <div class="box box-warn"><strong>Tensão central</strong>Rafael precisa entregar o projeto REFAP em 5 meses. Adriana é mais forte a longo prazo. O time atual é 100% masculino.</div>
-      <div class="dilemma-options">
-        <h4>Opções em análise</h4>
-        <div class="option-item"><span class="opt-label">A</span><span>Contratar Lucas imediatamente; manter Adriana em banco de talentos para próxima vaga.</span></div>
-        <div class="option-item"><span class="opt-label">B</span><span>Contratar Adriana com arranjo de trabalho remoto parcial + bolsista júnior como suporte temporário.</span></div>
-        <div class="option-item"><span class="opt-label">C</span><span>Contratar os dois em regime temporário e reter apenas um ao fim do projeto-piloto.</span></div>
-        <div class="option-item"><span class="opt-label">D</span><span>Ampliar o funil com busca ativa em programas "Mulheres na TI" e rede de egressas da UFRGS/PUCRS.</span></div>
+  <div class="group-landing">
+    <a href="#" class="gl-card" onclick="show('desafio1',null);return false;">
+      <div class="gl-card-top" style="background:linear-gradient(135deg,#92400E,#D97706);">
+        <div class="gl-group">Grupo 1</div>
+        <div class="gl-title">O Bug que Rafael Não Quer Contar</div>
       </div>
-      <div class="discussion-qs">
-        <h4>Questões para discussão</h4>
-        <ol>
-          <li>A urgência operacional justifica uma decisão que pode perpetuar desequilíbrio de gênero?</li>
-          <li>Quais os riscos jurídicos e reputacionais de cada opção?</li>
-          <li>Como estruturar critérios objetivos de seleção que minimizem vieses inconscientes?</li>
-        </ol>
+      <div class="gl-card-bottom">
+        <p>Os sensores na REFAP estão abaixo do contratado. A refinaria ainda não sabe.</p>
+        <span class="gl-cta" style="color:#D97706;">Ver desafio →</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Dilema 2 -->
-  <div class="dilemma">
-    <div class="dilemma-header"><div class="dilemma-number">2</div><h3>Distribuição de R$ 180 k — Mérito, igualdade ou retenção?</h3></div>
-    <div class="dilemma-body">
-      <p>O conselho aprovou R$ 180 mil em gratificações. Rafael enfrenta três grupos com expectativas distintas: os <strong>8 engenheiros seniores</strong> (entregaram o contrato REFAP, mas já recebem bem); os <strong>12 de suporte técnico</strong> (salários abaixo da média, alta rotatividade); e os <strong>22 administrativos/operacionais</strong> (nunca acessaram bônus históricos).</p>
-      <div class="box box-info"><strong>Dados — Porto Alegre (2024)</strong>Engenheiros IoT sênior: R$ 12–18 k/mês. Técnicos de suporte: R$ 4,5–7 k/mês. Gap interno: 4,2x. Rotatividade de TI gaúcho: ~28%/ano.</div>
-      <div class="dilemma-options">
-        <h4>Opções em análise</h4>
-        <div class="option-item"><span class="opt-label">A</span><span>Distribuição proporcional ao salário (reforça mérito, mas amplia desigualdade interna).</span></div>
-        <div class="option-item"><span class="opt-label">B</span><span>Valor fixo igual para todos os 42 (~R$ 4.285/pessoa) — máxima equidade simbólica.</span></div>
-        <div class="option-item"><span class="opt-label">C</span><span>Peso maior para suporte técnico (fidelização do grupo mais vulnerável).</span></div>
-        <div class="option-item"><span class="opt-label">D</span><span>Criar política de bônus por OKRs; distribuir R$ 90 k agora e reservar R$ 90 k para reforçar o modelo.</span></div>
+    </a>
+    <a href="#" class="gl-card" onclick="show('desafio2',null);return false;">
+      <div class="gl-card-top" style="background:linear-gradient(135deg,#1E3A8A,#1C4ED8);">
+        <div class="gl-group">Grupo 2</div>
+        <div class="gl-title">O Fundador Que Não Pode Ser Punido</div>
       </div>
-      <div class="discussion-qs">
-        <h4>Questões para discussão</h4>
-        <ol>
-          <li>Qual framework de justiça distributiva cada opção representa?</li>
-          <li>Como a decisão impacta rotatividade e cultura organizacional?</li>
-          <li>Que papel cumpre a transparência na comunicação da política de bônus?</li>
-        </ol>
+      <div class="gl-card-bottom">
+        <p>Thiago assediou Camila. O código de conduta é claro. Mas Thiago tem 30% da empresa.</p>
+        <span class="gl-cta" style="color:#1C4ED8;">Ver desafio →</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Dilema 3 -->
-  <div class="dilemma">
-    <div class="dilemma-header"><div class="dilemma-number">3</div><h3>Bug de produto — 61% vs. 72% prometido à REFAP</h3></div>
-    <div class="dilemma-body">
-      <p>Auditoria interna revelou que os sensores na <strong>REFAP (Canoas/RS)</strong> entregam 61% de acurácia — abaixo dos 72% contratados. Nenhum incidente ainda, mas o risco é real. Thiago acredita que a correção leva 90 dias. Rafael teme que a divulgação imediata coloque o contrato em risco.</p>
-      <div class="box box-danger"><strong>Risco regulatório e reputacional</strong>Refinarias são ambientes críticos. Se um incidente ocorrer antes da correção e a REFAP descobrir que a SensorTech sabia do problema, o impacto jurídico pode ser fatal. Implicações de segurança (NR-13).</div>
-      <div class="dilemma-options">
-        <h4>Opções em análise</h4>
-        <div class="option-item"><span class="opt-label">A</span><span>Divulgar imediatamente à REFAP com plano de correção em 90 dias e proposta de compensação contratual.</span></div>
-        <div class="option-item"><span class="opt-label">B</span><span>Corrigir silenciosamente e comunicar à REFAP apenas a "melhoria do algoritmo" após validação.</span></div>
-        <div class="option-item"><span class="opt-label">C</span><span>Acionar o jurídico para rever a cláusula de SLA antes de qualquer comunicação externa.</span></div>
-        <div class="option-item"><span class="opt-label">D</span><span>Escalar para o conselho (com Criatec3) e tomar a decisão coletivamente.</span></div>
+    </a>
+    <a href="#" class="gl-card" onclick="show('desafio3',null);return false;">
+      <div class="gl-card-top" style="background:linear-gradient(135deg,#065F46,#059669);">
+        <div class="gl-group">Grupo 3</div>
+        <div class="gl-title">A Conversa Que Rafael Não Consegue Ter</div>
       </div>
-      <div class="discussion-qs">
-        <h4>Questões para discussão</h4>
-        <ol>
-          <li>Em que momento omitir um risco técnico torna-se antiético ou ilegal?</li>
-          <li>Como a NR-13 e a responsabilidade civil do fornecedor se aplicam ao caso?</li>
-          <li>O custo de reputação de uma divulgação proativa supera o risco de ocultação?</li>
-        </ol>
+      <div class="gl-card-bottom">
+        <p>O contrato da ChipBrasil vai asfixiar a empresa. O negociador é o melhor amigo de Rafael.</p>
+        <span class="gl-cta" style="color:#059669;">Ver desafio →</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Dilema 4 -->
-  <div class="dilemma">
-    <div class="dilemma-header"><div class="dilemma-number">4</div><h3>Assédio moral e de gênero — A fala de Thiago na reunião</h3></div>
-    <div class="dilemma-body">
-      <p>Em reunião de vendas, Thiago afirmou publicamente que "mulheres têm dificuldade com a abordagem mais agressiva que vendas industriais exigem." <strong>Camila Souza</strong>, coordenadora de contas, registrou queixa formal por assédio com viés de gênero. Dois colaboradores confirmaram o episódio. Thiago é co-fundador e detém 30% das quotas.</p>
-      <div class="box box-danger"><strong>Dimensão jurídica</strong>Assédio moral com recorte de gênero pode configurar infração à Lei 9.029/1995. Com testemunhos confirmados, o risco de ação coletiva é real. Criatec3 já manifestou preocupação com os critérios ESG da carteira.</div>
-      <div class="dilemma-options">
-        <h4>Opções em análise</h4>
-        <div class="option-item"><span class="opt-label">A</span><span>Suspensão imediata de Thiago da liderança enquanto a investigação interna ocorre.</span></div>
-        <div class="option-item"><span class="opt-label">B</span><span>Mediação formal com facilitador externo + treinamento obrigatório de D&amp;I para toda a liderança.</span></div>
-        <div class="option-item"><span class="opt-label">C</span><span>Rafael assume a liderança técnica; Thiago migra para conselho consultivo por 6 meses.</span></div>
-        <div class="option-item"><span class="opt-label">D</span><span>Emitir nota interna de repúdio e encaminhar a comitê de ética independente.</span></div>
+    </a>
+    <a href="#" class="gl-card" onclick="show('desafio4',null);return false;">
+      <div class="gl-card-top" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);">
+        <div class="gl-group">Grupo 4</div>
+        <div class="gl-title">Corrigir Agora Pode Quebrar a Empresa</div>
       </div>
-      <div class="discussion-qs">
-        <h4>Questões para discussão</h4>
-        <ol>
-          <li>Qual é o limite entre punição proporcional e proteção da empresa diante de um sócio fundador?</li>
-          <li>Como a permanência de Camila se torna insustentável se nenhuma ação for tomada?</li>
-          <li>O que um investidor ESG como o Criatec3 pode exigir como condição de permanência?</li>
-        </ol>
+      <div class="gl-card-bottom">
+        <p>Mulheres ganham 30% menos. Corrigir isso agora custa R$ 280k que a empresa não tem.</p>
+        <span class="gl-cta" style="color:#7C3AED;">Ver desafio →</span>
       </div>
-    </div>
+    </a>
+    <a href="#" class="gl-card" onclick="show('desafio5',null);return false;">
+      <div class="gl-card-top" style="background:linear-gradient(135deg,#7F1D1D,#DC2626);">
+        <div class="gl-group">Grupo 5</div>
+        <div class="gl-title">O E-mail Que Pedro Não Deveria Ter Lido</div>
+      </div>
+      <div class="gl-card-bottom">
+        <p>Pedro descobriu que Thiago desviou R$ 180k. Falar significa destruir a empresa. Calar, também.</p>
+        <span class="gl-cta" style="color:#DC2626;">Ver desafio →</span>
+      </div>
+    </a>
   </div>
 </div>
+
+<!-- ════════════════════════════════════════
+     DESAFIO 1 — HONESTIDADE
+════════════════════════════════════════ -->
+<div id="desafio1" class="page">
+  <a href="#" class="btn-home" onclick="show('desafios',null);return false;">← Voltar aos Desafios</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#92400E,#D97706);">
+    <span class="desafio-grupo-label">Grupo 1</span>
+        <h1>O Bug que Rafael Não Quer Contar</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Era terça-feira à noite quando Thiago entrou na sala de Rafael com um relatório na mão e uma expressão que Rafael não gostava de ver. A auditoria interna havia concluído: os sensores instalados na REFAP, refinaria da Petrobras em Canoas, estavam entregando 61% de acurácia na detecção de falhas. O contrato garantia 72%.</p>
+    <p>A REFAP não sabe. Nenhum incidente havia ocorrido até então. Mas a refinaria opera sob normas rígidas de segurança industrial (NR-13), e os sensores monitoram compressores e caldeiras em ambiente de alto risco. A diferença entre 61% e 72% não é só técnica: é a diferença entre detectar ou não uma falha antes que ela vire acidente.</p>
+    <p>Thiago acredita que consegue corrigir o algoritmo em 90 dias. Rafael faz o cálculo: o contrato com a REFAP representa 40% da receita anual. Uma denúncia imediata pode acionar a cláusula de inadimplemento técnico, suspender pagamentos e abrir processo. Com R$ 450 mil em caixa, a SensorTech não sobreviveria seis meses sem esse contrato.</p>
+    <p>"Se não aconteceu nada até agora, pode não acontecer em 90 dias", disse Rafael. Thiago ficou em silêncio por um longo tempo antes de responder: "E se acontecer?"</p>
+  </div>
+
+  <div class="desafio-tensao" style="background:#FFFBEB;color:#78350F;">
+    <strong>O dilema</strong>
+    <p>Comunicar à REFAP imediatamente, com um plano de correção e total transparência sobre o risco, é a única conduta compatível com o que se espera de uma organização íntegra. Mas a consequência pode ser o fim da empresa, a demissão de 42 pessoas e o encerramento de um projeto construído em 10 anos. Silenciar por 90 dias resolve tecnicamente o problema, mas transforma Rafael e Thiago em gestores que souberam de um risco em ambiente crítico e escolheram não comunicar.</p>
+  </div>
+
+  <div class="desafio-pergunta" style="background:linear-gradient(135deg,#92400E,#D97706);">
+    <span class="pq-label">A pergunta do grupo</span>
+    <h2>Como vocês resolveriam essa situação?</h2>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DESAFIO 2 — IGUALDADE
+════════════════════════════════════════ -->
+<div id="desafio2" class="page">
+  <a href="#" class="btn-home" onclick="show('desafios',null);return false;">← Voltar aos Desafios</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#1E3A8A,#1C4ED8);">
+    <span class="desafio-grupo-label">Grupo 2</span>
+        <h1>O Fundador Que Não Pode Ser Punido</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Em uma reunião de vendas na semana passada, Thiago Mendes afirmou publicamente que "mulheres têm dificuldade com a abordagem mais agressiva que vendas industriais exigem." Camila Souza, coordenadora de contas há três anos, registrou queixa formal por assédio com recorte de gênero. Dois colegas confirmaram o episódio por escrito.</p>
+    <p>Maria Fernanda apresentou o caso a Rafael com uma conclusão direta: o Código de Conduta recém-aprovado é explícito. Comportamento de assédio com testemunhos confirmados resulta em investigação formal e afastamento temporário da liderança durante o processo. Sem exceções. Sem distinções por cargo ou participação societária.</p>
+    <p>Rafael passou a noite pensando. Afastar Thiago agora significa: paralisar o desenvolvimento do firmware dos sensores no momento em que a REFAP aguarda uma atualização crítica, expor a empresa a uma disputa societária com um sócio que detém 30% da empresa e cujo know-how não existe documentado em nenhum lugar, e provavelmente forçar uma crise que chegará ao Criatec3 em semanas.</p>
+    <p>Não afastar Thiago significa: Camila pedirá demissão. Os dois colegas que testemunharam aprenderão que o Código de Conduta não vale para quem tem poder. E o Criatec3, que monitora critérios ESG da carteira, descobrirá que a empresa ignorou o próprio código no primeiro teste real.</p>
+  </div>
+
+  <div class="desafio-tensao" style="background:#EFF6FF;color:#1E3A5F;">
+    <strong>O dilema</strong>
+    <p>As mesmas regras deveriam se aplicar a todos, independente de hierarquia, tempo de casa ou contribuição financeira. Se essa regra cede diante do poder do fundador, ela nunca existiu de verdade. Mas aplicá-la agora pode paralisar a empresa tecnicamente e desencadear uma guerra societária. A pergunta real não é só "o que fazer com Thiago". É: que tipo de organização a SensorTech quer ser?</p>
+  </div>
+
+  <div class="desafio-pergunta" style="background:linear-gradient(135deg,#1E3A8A,#1C4ED8);">
+    <span class="pq-label">A pergunta do grupo</span>
+    <h2>Como vocês resolveriam essa situação?</h2>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DESAFIO 3 — RESPEITO
+════════════════════════════════════════ -->
+<div id="desafio3" class="page">
+  <a href="#" class="btn-home" onclick="show('desafios',null);return false;">← Voltar aos Desafios</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#065F46,#059669);">
+    <span class="desafio-grupo-label">Grupo 3</span>
+        <h1>A Conversa Que Rafael Não Consegue Ter</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Carlos Andrade é o diretor comercial da ChipBrasil e o único fornecedor qualificado dos microcontroladores da SensorTech. Ele também é amigo de Rafael há 12 anos: foi Carlos quem apresentou a empresa ao primeiro investidor-anjo em 2017, e quem segurou o prazo de entrega de componentes durante a crise de semicondutores de 2021, quando qualquer outro fornecedor teria rompido o contrato.</p>
+    <p>Na semana passada, Carlos enviou a proposta de renovação contratual. Maria Fernanda analisou as cláusulas e chegou até Rafael com uma planilha e uma expressão séria: os reajustes previstos para os próximos 3 anos eliminariam integralmente a margem EBITDA da SensorTech. A empresa cresceria em receita e quebraria em caixa.</p>
+    <p>"Você precisa recusar esse contrato e renegociar do zero", disse Maria Fernanda. Rafael sabe que ela está certa. Mas sabe também que Carlos construiu essa proposta acreditando que a amizade garantiria a aceitação. Recusar significa dizer a um amigo que seu contrato é inaceitável, depois de tudo que ele fez pela SensorTech. E pode significar perder o fornecedor, já que Carlos, magoado, pode preferir redirecionar o portfólio para concorrentes.</p>
+    <p>A reunião está marcada para amanhã.</p>
+  </div>
+
+  <div class="desafio-tensao" style="background:#ECFDF5;color:#065F46;">
+    <strong>O dilema</strong>
+    <p>Tratar alguém com genuína consideração não é evitar conversas difíceis por conforto próprio. É dar ao outro a seriedade e a honradez que ele merece, mesmo quando a verdade é desconfortável. Aceitar um contrato ruim para não decepcionar um amigo não é respeito: é condescendência disfarçada de lealdade. Mas dizer não pode custar a amizade, o fornecedor e, se Carlos agir mal, a operação inteira. Rafael está sozinho nessa sala.</p>
+  </div>
+
+  <div class="desafio-pergunta" style="background:linear-gradient(135deg,#065F46,#059669);">
+    <span class="pq-label">A pergunta do grupo</span>
+    <h2>Como vocês resolveriam essa situação?</h2>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DESAFIO 4 — EQUIDADE
+════════════════════════════════════════ -->
+<div id="desafio4" class="page">
+  <a href="#" class="btn-home" onclick="show('desafios',null);return false;">← Voltar aos Desafios</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);">
+    <span class="desafio-grupo-label">Grupo 4</span>
+        <h1>Corrigir Agora Pode Quebrar a Empresa</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Maria Fernanda conduziu um diagnóstico salarial nas primeiras semanas na SensorTech. O resultado foi pior do que o esperado: em funções equivalentes de suporte técnico e gestão de projetos, as 8 mulheres da empresa recebem entre 22% e 35% menos que os colegas homens nas mesmas posições. Não há justificativa documentada para nenhuma dessas diferenças.</p>
+    <p>Ela apresentou os números a Rafael com uma recomendação clara: corrigir imediatamente, por ser a coisa certa a fazer e porque a Lei 14.611/2023 torna isso crescentemente obrigatório. O custo da correção: R$ 280 mil por ano em folha adicional.</p>
+    <p>Rafael abriu o balanço ao lado. A empresa tem R$ 450 mil em caixa. A renovação do contrato da REFAP, que representa 40% da receita, exige uma atualização de firmware que custará R$ 200 mil nos próximos 4 meses. Se a empresa comprometer R$ 280 mil em folha agora, não entregará a REFAP. Se não entregar a REFAP, perde o contrato. Se perder o contrato, 42 pessoas perdem o emprego, incluindo as 8 mulheres que Maria Fernanda quer proteger.</p>
+    <p>"Então você está me dizendo que a solução para a injustiça é adiar a justiça", disse Maria Fernanda. Rafael não respondeu.</p>
+  </div>
+
+  <div class="desafio-tensao" style="background:#F5F3FF;color:#4C1D95;">
+    <strong>O dilema</strong>
+    <p>Corrigir desequilíbrios estruturais para garantir que as oportunidades sejam genuinamente acessíveis não pode ser tratado como item de agenda futura. Adiar a correção salarial com o argumento de que "não é o momento" é exatamente o raciocínio que mantém essas desigualdades por décadas. Mas corrigir agora, neste contexto financeiro específico, pode destruir a empresa e prejudicar todos, inclusive as pessoas que a correção pretendia proteger. Há uma saída que honre os dois lados?</p>
+  </div>
+
+  <div class="desafio-pergunta" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);">
+    <span class="pq-label">A pergunta do grupo</span>
+    <h2>Como vocês resolveriam essa situação?</h2>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DESAFIO 5 — LIBERDADE
+════════════════════════════════════════ -->
+<div id="desafio5" class="page">
+  <a href="#" class="btn-home" onclick="show('desafios',null);return false;">← Voltar aos Desafios</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#7F1D1D,#DC2626);">
+    <span class="desafio-grupo-label">Grupo 5</span>
+        <h1>O E-mail Que Pedro Não Deveria Ter Lido</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Pedro Alves é o coordenador financeiro da SensorTech. Na última quinta-feira, recebeu por engano um e-mail encaminhado de Thiago para o irmão, contendo faturas da TechCloud Sul com o seguinte comentário manuscrito: "já incluí a margem extra nos três últimos ciclos, conforme combinado." Pedro abriu um arquivo anexo e encontrou o que não esperava: as faturas da TechCloud Sul para a SensorTech incluíam itens inexistentes. R$ 180 mil cobrados ao longo de dois anos por serviços que nunca foram prestados.</p>
+    <p>Pedro imprimiu tudo, guardou na gaveta e passou dois dias sem dormir. O novo canal de denúncias da empresa foi lançado há três semanas pelo programa de compliance. O material diz que denúncias são anônimas e protegidas. Mas Pedro sabe que Thiago é o único que tem acesso completo aos servidores onde os logs de acesso ao canal são registrados. E que seu cargo reporta diretamente a Thiago.</p>
+    <p>Se Pedro denunciar e a investigação confirmar o desvio, Thiago poderá ser afastado. Sem Thiago, o desenvolvimento do produto para. A REFAP pode perder confiança. O Criatec3 pode rever o investimento. Se Pedro não denunciar, o desvio continua. E Pedro passa a ser alguém que soube e escolheu o silêncio.</p>
+    <p>Esta manhã, Pedro recebeu uma mensagem de Thiago: "Precisamos conversar sobre o seu futuro na empresa. Amanhã às 9h."</p>
+  </div>
+
+  <div class="desafio-tensao" style="background:#FEF2F2;color:#7F1D1D;">
+    <strong>O dilema</strong>
+    <p>Agir de acordo com a própria consciência sem medo de represálias é uma promessa que qualquer organização que se quer íntegra deve ser capaz de honrar. O canal de denúncias existe exatamente para este momento. Mas a proteção é real ou apenas no papel? Pedro não está diante de um dilema teórico: está diante de uma ameaça concreta à sua carreira, possivelmente amanhã de manhã. O que a empresa prometeu a Pedro vale quando quem está sendo denunciado é o cofundador com 30% da empresa?</p>
+  </div>
+
+  <div class="desafio-pergunta" style="background:linear-gradient(135deg,#7F1D1D,#DC2626);">
+    <span class="pq-label">A pergunta do grupo</span>
+    <h2>Como vocês resolveriam essa situação?</h2>
+  </div>
+</div>
+
 
 <!-- ════════════════════════════════════════
      GOVERNANÇA
@@ -471,12 +676,12 @@
     <div class="label">Seção 3</div>
     <h1>Cenários de Governança</h1>
   </div>
-  <p style="margin-bottom:28px;color:#64748B;">Quatro falhas estruturais de governança identificadas na SensorTech — cada uma com implicações práticas para decisores e investidores.</p>
+  <p style="margin-bottom:28px;color:#64748B;">Quatro falhas estruturais de governança identificadas na SensorTech: cada uma com implicações práticas para decisores e investidores.</p>
 
   <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G1 — Conflito de Interesse</span>
+    <span class="scenario-tag tag-g">G1: Conflito de Interesse</span>
     <h3>TechCloud Sul: o fornecedor não declarado de Thiago</h3>
-    <p>Em 2023, a SensorTech contratou a <strong>TechCloud Sul Ltda.</strong> para hospedagem em nuvem dos dados dos sensores — R$ 380 k/ano. Rafael só descobriu depois: Thiago é sócio minoritário da TechCloud Sul, empresa fundada pelo irmão. O conflito nunca foi declarado ao conselho nem ao Criatec3. Não existe política formal de divulgação de conflitos de interesse.</p>
+    <p>Em 2023, a SensorTech contratou a <strong>TechCloud Sul Ltda.</strong> para hospedagem em nuvem dos dados dos sensores: R$ 380 k/ano. Rafael só descobriu depois: Thiago é sócio minoritário da TechCloud Sul, empresa fundada pelo irmão. O conflito nunca foi declarado ao conselho nem ao Criatec3. Não existe política formal de divulgação de conflitos de interesse.</p>
     <div class="box box-danger"><strong>Exposição</strong>O contrato pode ser anulado. A Criatec3 tem direito de preferência e veto em contratos acima de R$ 200 k, segundo acordo de sócios. Thiago pode responder por quebra de dever fiduciário.</div>
     <div class="discussion-qs">
       <h4>Questões para discussão</h4>
@@ -489,7 +694,7 @@
   </div>
 
   <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G2 — Controles Internos</span>
+    <span class="scenario-tag tag-g">G2: Controles Internos</span>
     <h3>Ausência de alçadas de aprovação</h3>
     <p>Até 2024, qualquer sócio-fundador poderia assinar contratos de qualquer valor sem aprovação do conselho. Isso permitiu que quatro contratos acima de R$ 100 k fossem assinados sem registro formal. O Criatec3 exige, como condição para a próxima rodada, a implementação de alçadas: compras acima de R$ 50 k requerem aprovação dupla; acima de R$ 200 k, aprovação do conselho.</p>
     <div class="box box-warn"><strong>Desafio prático</strong>Implementar governança formal sem travar a agilidade operacional que é parte do DNA da startup. Como calibrar o controle sem criar burocracia paralisante?</div>
@@ -504,9 +709,9 @@
   </div>
 
   <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G3 — Deadlock Societário</span>
+    <span class="scenario-tag tag-g">G3: Deadlock Societário</span>
     <h3>Impasse sobre contrato de R$ 12 M com cooperativa agrícola gaúcha</h3>
-    <p>A <strong>Coopsul</strong> (Cooperativa Agropecuária Sul) propôs um contrato de monitoramento de silos e maquinário em 340 propriedades rurais do RS — R$ 12 M em 5 anos. Rafael é favorável; Thiago considera o projeto arriscado demais (escopo novo, alto investimento em hardware). Com 50/50 na decisão executiva, a empresa está em deadlock. O Criatec3 tem direito de desempate apenas em casos de impasse formalmente registrado.</p>
+    <p>A <strong>Coopsul</strong> (Cooperativa Agropecuária Sul) propôs um contrato de monitoramento de silos e maquinário em 340 propriedades rurais do RS: R$ 12 M em 5 anos. Rafael é favorável; Thiago considera o projeto arriscado demais (escopo novo, alto investimento em hardware). Com 50/50 na decisão executiva, a empresa está em deadlock. O Criatec3 tem direito de desempate apenas em casos de impasse formalmente registrado.</p>
     <div class="box box-info"><strong>Dilema de governança</strong>O acordo de sócios não prevê mecanismo claro de resolução de impasses operacionais. A empresa pode perder uma oportunidade de R$ 12 M por ausência de regras de decisão.</div>
     <div class="discussion-qs">
       <h4>Questões para discussão</h4>
@@ -519,9 +724,9 @@
   </div>
 
   <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G4 — Lacuna Salarial de Gênero</span>
+    <span class="scenario-tag tag-g">G4: Lacuna Salarial de Gênero</span>
     <h3>Mulheres ganham entre 22% e 35% menos em funções equivalentes</h3>
-    <p>Diagnóstico interno encomendado pelo Criatec3 revelou que, em funções equivalentes de suporte técnico e gestão de projetos, mulheres na SensorTech recebem entre 22% e 35% menos que homens. A empresa nunca publicou relatório de equidade salarial. A <strong>Lei nº 14.611/2023</strong> (Igualdade Salarial) obriga empresas com mais de 100 funcionários — a SensorTech ainda está abaixo — mas a Criatec3 usa o indicador como critério ESG de portfólio.</p>
+    <p>Diagnóstico interno encomendado pelo Criatec3 revelou que, em funções equivalentes de suporte técnico e gestão de projetos, mulheres na SensorTech recebem entre 22% e 35% menos que homens. A empresa nunca publicou relatório de equidade salarial. A <strong>Lei nº 14.611/2023</strong> (Igualdade Salarial) obriga empresas com mais de 100 funcionários: a SensorTech ainda está abaixo: mas a Criatec3 usa o indicador como critério ESG de portfólio.</p>
     <div class="box box-warn"><strong>Impacto</strong>À medida que a empresa cresce rumo a 100+ funcionários, o risco jurídico torna-se iminente. A lacuna também corrói a cultura e compromete o recrutamento no mercado de TI gaúcho.</div>
     <div class="discussion-qs">
       <h4>Questões para discussão</h4>
@@ -637,7 +842,7 @@
       <div class="pc-body">
         <h4>Entregáveis</h4>
         <div class="pc-feature"><span class="check check-yes">✔</span><span>Mapeamento estratégico de riscos com cenários e simulações</span></div>
-        <div class="pc-feature"><span class="check check-yes">✔</span><span>30+ controles automatizados (software dedicado — licença incluída)</span></div>
+        <div class="pc-feature"><span class="check check-yes">✔</span><span>30+ controles automatizados (software dedicado: licença incluída)</span></div>
         <div class="pc-feature"><span class="check check-yes">✔</span><span>Due diligence de fornecedores e parceiros estratégicos</span></div>
         <div class="pc-feature"><span class="check check-yes">✔</span><span>Auditorias mensais + consultoria on-demand ilimitada</span></div>
         <div class="pc-feature"><span class="check check-yes">✔</span><span>Compliance Officer terceirizado (20h/mês presenciais)</span></div>
@@ -698,8 +903,130 @@
 
 </div>
 
-</main>
+<!-- ════════════════════════════════════════
+     GABARITO (oculto da nav: uso do professor)
+════════════════════════════════════════ -->
+<div id="gabarito" class="page">
+  <a href="#" class="btn-home" onclick="show('stakeholders',null);return false;">← Voltar aos Stakeholders</a>
+  <div class="section-header">
+    <div class="label">Gabarito</div>
+    <h1>Matriz Poder x Interesse: Resposta</h1>
+  </div>
+  <p style="margin-bottom:28px;color:#64748B;">Posicionamento dos 11 stakeholders da SensorTech na matriz, com justificativa para cada alocação.</p>
 
+  <!-- Matriz visual -->
+  <div style="background:white;border-radius:16px;border:1px solid #E2E8F0;padding:32px;margin-bottom:32px;">
+    <div style="display:grid;grid-template-columns:32px 1fr;gap:0;align-items:center;">
+      <!-- Eixo Y label -->
+      <div style="writing-mode:vertical-rl;transform:rotate(180deg);font-size:13px;font-weight:700;color:#475569;letter-spacing:1px;text-transform:uppercase;text-align:center;grid-row:1/3;">PODER</div>
+      <!-- Quadrantes -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;">
+        <!-- Alto Poder + Baixo Interesse -->
+        <div style="background:#BFDBFE;border-radius:12px;padding:20px;min-height:160px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#1E3A5F;margin-bottom:12px;">Alto Poder · Baixo Interesse</div>
+          <div style="font-size:13px;color:#1E3A5F;line-height:1.6;">
+            🔌 <strong>ChipBrasil</strong><br>
+            📡 <strong>ANATEL</strong>
+          </div>
+        </div>
+        <!-- Alto Poder + Alto Interesse -->
+        <div style="background:#0F172A;border-radius:12px;padding:20px;min-height:160px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94A3B8;margin-bottom:12px;">Alto Poder · Alto Interesse</div>
+          <div style="font-size:13px;color:#F1F5F9;line-height:1.6;">
+            🏭 <strong>REFAP: Petrobras</strong><br>
+            💼 <strong>Criatec3</strong><br>
+            👨‍💻 <strong>Rafael Costa</strong><br>
+            👨‍🔬 <strong>Thiago Mendes</strong>
+          </div>
+        </div>
+        <!-- Baixo Poder + Baixo Interesse -->
+        <div style="background:#DBEAFE;border-radius:12px;padding:20px;min-height:160px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#1E3A5F;margin-bottom:12px;">Baixo Poder · Baixo Interesse</div>
+          <div style="font-size:13px;color:#1E3A5F;line-height:1.6;">
+            📦 <strong>Demais Fornecedores</strong><br>
+            🤝 <strong>ABIoT</strong>
+          </div>
+        </div>
+        <!-- Baixo Poder + Alto Interesse -->
+        <div style="background:#3B82F6;border-radius:12px;padding:20px;min-height:160px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#DBEAFE;margin-bottom:12px;">Baixo Poder · Alto Interesse</div>
+          <div style="font-size:13px;color:white;line-height:1.6;">
+            🏢 <strong>17 Clientes PME</strong><br>
+            ⚙️ <strong>Equipe Técnica Sênior</strong><br>
+            👷 <strong>Funcionários Operacionais</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Eixo X label -->
+    <div style="text-align:center;margin-top:12px;padding-left:32px;font-size:13px;font-weight:700;color:#475569;letter-spacing:1px;text-transform:uppercase;">INTERESSE →</div>
+  </div>
+
+  <!-- Justificativas -->
+  <h2 style="margin-bottom:20px;">Justificativas por Stakeholder</h2>
+  <div style="display:grid;gap:14px;">
+
+    <div class="box box-danger">
+      <strong>🏭 REFAP: Alto Poder · Alto Interesse</strong>
+      Representa 40% da receita. Seu cancelamento seria potencialmente fatal para a SensorTech (alto poder). Para a REFAP, os sensores monitoram equipamentos críticos em refinaria: substituir o fornecedor levaria meses e exporia a empresa a riscos regulatórios (NR-13), portanto tem alto interesse na continuidade do serviço.
+    </div>
+
+    <div class="box box-danger">
+      <strong>💼 Criatec3: Alto Poder · Alto Interesse</strong>
+      Detém 40% da equity com direito de veto em contratos acima de R$ 200 k (alto poder). O retorno do fundo depende integralmente do sucesso da SensorTech: há interesse financeiro direto e contínuo em cada decisão da empresa.
+    </div>
+
+    <div class="box box-danger">
+      <strong>👨‍💻 Rafael Costa: Alto Poder · Alto Interesse</strong>
+      Co-fundador com 30% das quotas e controle operacional. A empresa é sua principal fonte de renda e projeto de vida. Máximo poder e máximo interesse.
+    </div>
+
+    <div class="box box-danger">
+      <strong>👨‍🔬 Thiago Mendes: Alto Poder · Alto Interesse</strong>
+      Co-fundador com 30% das quotas e detentor do know-how tecnológico central. Sua saída seria tecnicamente irreparável no curto prazo (alto poder). A empresa é também seu projeto de vida (alto interesse).
+    </div>
+
+    <div class="box box-info">
+      <strong>🔌 ChipBrasil: Alto Poder · Baixo Interesse</strong>
+      Único fornecedor qualificado dos microcontroladores: uma ruptura pararia a produção em semanas (alto poder). Contudo, a SensorTech representa apenas uma fração pequena do portfólio da ChipBrasil, que atende dezenas de empresas. Interesse baixo: é mais um cliente de porte médio.
+    </div>
+
+    <div class="box box-info">
+      <strong>📡 ANATEL: Alto Poder · Baixo Interesse</strong>
+      Pode suspender a homologação dos sensores e inviabilizar as vendas (alto poder). Para a ANATEL, a SensorTech é apenas uma das milhares de empresas reguladas: não há interesse diferenciado nem relação próxima.
+    </div>
+
+    <div class="box box-success">
+      <strong>🏢 17 Clientes PME: Baixo Poder · Alto Interesse</strong>
+      Individualmente, nenhum representa mais de 8% da receita e há base diversificada (baixo poder individual). Mas dependem do monitoramento IoT para eficiência operacional e redução de paradas: sem alternativa local equivalente no curto prazo (alto interesse).
+    </div>
+
+    <div class="box box-success">
+      <strong>⚙️ Equipe Técnica Sênior: Baixo Poder · Alto Interesse</strong>
+      Individualmente têm baixo poder formal na estrutura de decisão. Mas a empresa é sua principal fonte de renda em um mercado de alta rotatividade (28%/ano): alto interesse na estabilidade e nas condições de trabalho.
+    </div>
+
+    <div class="box box-success">
+      <strong>👷 Funcionários Operacionais: Baixo Poder · Alto Interesse</strong>
+      Baixo poder de barganha individual e poucas alternativas equivalentes no mercado regional. A SensorTech representa emprego e renda familiar: alto interesse nos resultados e na saúde da empresa.
+    </div>
+
+    <div class="box box-warn">
+      <strong>📦 Demais Fornecedores: Baixo Poder · Baixo Interesse</strong>
+      Substituíveis por alternativas de mercado (baixo poder). A SensorTech é um cliente pequeno entre muitos: relação puramente transacional, sem dependência relevante de nenhum dos lados.
+    </div>
+
+    <div class="box box-warn">
+      <strong>🤝 ABIoT: Baixo Poder · Baixo Interesse</strong>
+      Sem poder executivo sobre as operações da empresa. A SensorTech é um membro entre centenas, com contribuição associativa regular: sem protagonismo nem dependência diferenciada.
+    </div>
+
+  </div>
+</div>
+
+
+
+</main>
 <script>
   function show(pageId, linkEl) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
