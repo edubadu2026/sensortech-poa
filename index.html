@@ -668,72 +668,160 @@
 
 
 <!-- ════════════════════════════════════════
-     GOVERNANÇA
+     GOVERNANÇA — LANDING
 ════════════════════════════════════════ -->
 <div id="governanca" class="page">
   <a href="#" class="btn-home" onclick="show('inicio',null);return false;">🏠 Voltar ao Início</a>
   <div class="section-header">
     <div class="label">Seção 3</div>
-    <h1>Cenários de Governança</h1>
+    <h1>Problemas de Governança</h1>
   </div>
-  <p style="margin-bottom:28px;color:#64748B;">Quatro falhas estruturais de governança identificadas na SensorTech: cada uma com implicações práticas para decisores e investidores.</p>
+  <p style="margin-bottom:32px;color:#374151;">Três situações reais identificadas na SensorTech. Cada grupo recebe um problema, analisa o que aconteceu e apresenta uma proposta de solução para o conselho.</p>
 
-  <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G1: Conflito de Interesse</span>
-    <h3>TechCloud Sul: o fornecedor não declarado de Thiago</h3>
-    <p>Em 2023, a SensorTech contratou a <strong>TechCloud Sul Ltda.</strong> para hospedagem em nuvem dos dados dos sensores: R$ 380 k/ano. Rafael só descobriu depois: Thiago é sócio minoritário da TechCloud Sul, empresa fundada pelo irmão. O conflito nunca foi declarado ao conselho nem ao Criatec3. Não existe política formal de divulgação de conflitos de interesse.</p>
-    <div class="box box-danger"><strong>Exposição</strong>O contrato pode ser anulado. A Criatec3 tem direito de preferência e veto em contratos acima de R$ 200 k, segundo acordo de sócios. Thiago pode responder por quebra de dever fiduciário.</div>
-    <div class="discussion-qs">
-      <h4>Questões para discussão</h4>
+  <div class="group-landing">
+
+    <a class="gl-card" href="#" onclick="show('p1',null);return false;" style="background:linear-gradient(135deg,#0F172A,#1C4ED8);">
+      <div class="gl-card-top">
+        <div class="gl-group">Grupo 1</div>
+        <div class="gl-title">A Reunião de Terça-Feira</div>
+      </div>
+      <div class="gl-card-bottom">
+        <p>Maria Fernanda pediu acesso ao sistema de contratos e encontrou algo que Rafael não esperava.</p>
+        <span class="gl-cta" style="color:#1C4ED8;">Ver problema →</span>
+      </div>
+    </a>
+
+    <a class="gl-card" href="#" onclick="show('p2',null);return false;" style="background:linear-gradient(135deg,#1E3A5F,#2563EB);">
+      <div class="gl-card-top">
+        <div class="gl-group">Grupo 2</div>
+        <div class="gl-title">O Conselho que Nunca se Reuniu</div>
+      </div>
+      <div class="gl-card-bottom">
+        <p>Três anos depois do aporte, Gustavo Ramos abriu uma pasta numa reunião de rotina.</p>
+        <span class="gl-cta" style="color:#2563EB;">Ver problema →</span>
+      </div>
+    </a>
+
+    <a class="gl-card" href="#" onclick="show('p3',null);return false;" style="background:linear-gradient(135deg,#1E2235,#3B82F6);">
+      <div class="gl-card-top">
+        <div class="gl-group">Grupo 3</div>
+        <div class="gl-title">Os Números que Ninguém Havia Somado</div>
+      </div>
+      <div class="gl-card-bottom">
+        <p>Maria Fernanda passou duas semanas analisando a folha de pagamento antes de dizer qualquer coisa.</p>
+        <span class="gl-cta" style="color:#3B82F6;">Ver problema →</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     P1
+════════════════════════════════════════ -->
+<div id="p1" class="page">
+  <a href="#" class="btn-home" onclick="show('governanca',null);return false;">← Voltar aos Problemas</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#0F172A,#1C4ED8);">
+    <span class="desafio-grupo-label">Grupo 1</span>
+    <h1>A Reunião de Terça-Feira</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Era terça-feira à tarde quando Maria Fernanda pediu acesso ao sistema de contratos da SensorTech. Rafael liberou sem pensar muito, afinal, ela havia sido contratada exatamente para isso, para entender como a empresa funcionava por dentro.</p>
+    <p>Duas horas depois, ela bateu na porta da sala dele com um caderno na mão e uma expressão que Rafael não conseguiu ler bem. Ela fechou a porta, sentou, e abriu o caderno numa página coberta de anotações.</p>
+    <p>"Me fala da TechCloud Sul", disse ela.</p>
+    <p>Rafael explicou. Em 2023, a SensorTech precisava migrar a infraestrutura de dados dos sensores para a nuvem. A operação havia crescido: eram 18 clientes, dados em tempo real, alertas críticos para equipamentos industriais. A hospedagem local não dava mais conta. Thiago pesquisou fornecedores, apresentou três opções em reunião, recomendou a TechCloud Sul pelo custo-benefício e pela capacidade técnica. Rafael concordou. Assinaram. R$ 380 mil por ano.</p>
+    <p>"E você conhece os sócios da TechCloud Sul?", perguntou Maria Fernanda.</p>
+    <p>Rafael franziu o cenho. "Não. Por quê?"</p>
+    <p>Ela virou o caderno na direção dele. Havia dois nomes. O primeiro era o irmão de Thiago. O segundo era o próprio Thiago, com 18% de participação societária.</p>
+    <p>Rafael ficou em silêncio por um momento. "Thiago nunca mencionou isso."</p>
+    <p>"Não", disse Maria Fernanda. "Não mencionou."</p>
+    <p>Ela fechou o caderno e esperou. Havia mais perguntas do que respostas naquela sala, e nenhuma das duas pessoas presentes tinha pressa de preenchê-las.</p>
+  </div>
+
+  <div class="gov-scenario" style="background:#F8FAFC;">
+    <h3 style="margin-bottom:20px;">Sua tarefa</h3>
+    <div class="discussion-qs" style="background:transparent;padding:0;">
       <ol>
-        <li>O que é dever fiduciário e como ele se aplica a sócios-fundadores?</li>
-        <li>Como uma política de conflito de interesses deveria ser estruturada na SensorTech?</li>
-        <li>Qual o papel do conselho e do investidor na detecção e prevenção desse tipo de situação?</li>
+        <li>Que instância ou pessoa dentro da SensorTech deveria ter detectado essa situação? Maria Fernanda? O que estava faltando na estrutura da empresa?</li>
+        <li>A SensorTech não tem nenhuma regra escrita sobre esse tipo de situação. Desenhem uma, em linguagem direta, que qualquer gestor entenda e consiga aplicar.</li>
+        <li>O contrato com a TechCloud Sul está ativo e vale R$ 380 mil por ano. Thiago é sócio. O que vocês recomendam que aconteça agora?</li>
       </ol>
     </div>
   </div>
+</div>
 
-  <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G2: Controles Internos</span>
-    <h3>Ausência de alçadas de aprovação</h3>
-    <p>Até 2024, qualquer sócio-fundador poderia assinar contratos de qualquer valor sem aprovação do conselho. Isso permitiu que quatro contratos acima de R$ 100 k fossem assinados sem registro formal. O Criatec3 exige, como condição para a próxima rodada, a implementação de alçadas: compras acima de R$ 50 k requerem aprovação dupla; acima de R$ 200 k, aprovação do conselho.</p>
-    <div class="box box-warn"><strong>Desafio prático</strong>Implementar governança formal sem travar a agilidade operacional que é parte do DNA da startup. Como calibrar o controle sem criar burocracia paralisante?</div>
-    <div class="discussion-qs">
-      <h4>Questões para discussão</h4>
+<!-- ════════════════════════════════════════
+     P2
+════════════════════════════════════════ -->
+<div id="p2" class="page">
+  <a href="#" class="btn-home" onclick="show('governanca',null);return false;">← Voltar aos Problemas</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#1E3A5F,#2563EB);">
+    <span class="desafio-grupo-label">Grupo 2</span>
+    <h1>O Conselho que Nunca se Reuniu</h1>
+  </div>
+
+  <div class="desafio-context">
+    <p>Em setembro de 2021, Rafael e Thiago passaram uma semana inteira preparando a apresentação para o Criatec3. Slides, projeções, análise de mercado. No dia da reunião, Gustavo Ramos, sócio do fundo, fez poucas perguntas sobre o produto e muitas sobre a estrutura da empresa. Antes de assinar, ele colocou uma condição: a SensorTech precisaria constituir um Conselho de Administração. O fundo não entraria sem essa estrutura. Rafael concordou na hora.</p>
+    <p>O acordo de sócios foi redigido pelo escritório de advocacia do Criatec3. Vinte e três páginas. A cláusula 8.4 estabelecia a criação do Conselho de Administração em até noventa dias após o aporte, com três membros: Rafael, Gustavo e um conselheiro independente a ser indicado em conjunto. A cláusula 8.7 listava as matérias que exigiam aprovação prévia do conselho antes de qualquer compromisso formal da empresa.</p>
+    <p>O aporte entrou em outubro. Rafael e Thiago usaram os primeiros meses contratando engenheiros, expandindo a operação e entregando o projeto da REFAP que havia travado por falta de equipe. Os noventa dias passaram. O conselho nunca foi constituído.</p>
+    <p>Gustavo mencionou o assunto numa reunião informal em março de 2022. Rafael disse que estavam finalizando a indicação do conselheiro independente. Em junho, Gustavo perguntou de novo. Rafael disse que o nome estava quase definido. Depois disso, o assunto deixou de aparecer nas conversas. A empresa crescia, os números eram bons, e o Criatec3 recebia seus relatórios trimestrais sem maiores questionamentos.</p>
+    <p>Três anos se passaram assim.</p>
+    <p>Em agosto de 2024, Rafael assinou o contrato com a Coopsul. R$ 12 milhões em cinco anos. Ele enviou uma mensagem para Thiago: <em>"Fechou. Coopsul assinada."</em> Thiago respondeu com um emoji.</p>
+    <p>O Criatec3 ficou sabendo três semanas depois, por acaso, numa reunião de rotina.</p>
+    <p>Gustavo pediu a palavra antes do fim da pauta. Tinha o contrato impresso. Folheou devagar até a última página, onde estava a assinatura de Rafael. Colocou o documento sobre a mesa e olhou para os dois fundadores.</p>
+    <p>"Quando isso passou pelo conselho?", perguntou ele.</p>
+    <p>Rafael começou a explicar que o acordo de sócios não era claro quanto a contratos operacionais. Gustavo abriu uma pasta, retirou uma cópia do acordo e colocou ao lado do contrato da Coopsul. Não leu nada em voz alta. Apenas apontou para a cláusula 8.4 e depois para a data do documento.</p>
+    <p>Setembro de 2021.</p>
+    <p>O silêncio durou mais do que foi confortável para qualquer um na sala.</p>
+  </div>
+
+  <div class="gov-scenario" style="background:#F8FAFC;">
+    <h3 style="margin-bottom:20px;">Sua tarefa</h3>
+    <p style="margin-bottom:20px;color:#64748B;font-size:14px;">Quanto ao conselho:</p>
+    <div class="discussion-qs" style="background:transparent;padding:0;">
       <ol>
-        <li>Quais controles internos são essenciais em uma empresa com R$ 9,8 M de receita?</li>
-        <li>Como definir alçadas de aprovação proporcionais ao tamanho e risco do negócio?</li>
-        <li>Como o Conselho de Administração se diferencia do Conselho Consultivo nesse contexto?</li>
+        <li><strong>Composição:</strong> Quantos membros? Quem são? Qual o perfil de cada cadeira. Justifiquem cada escolha considerando o momento da SensorTech.</li>
+        <li><strong>Alçadas:</strong> Quais decisões da empresa exigem aprovação do conselho antes de qualquer compromisso formal?</li>
+        <li><strong>Funcionamento:</strong> Quantas vezes o conselho se reúne por ano? Em quais situações uma reunião extraordinária pode ser convocada?</li>
+        <li><strong>O problema imediato:</strong> O contrato da Coopsul já está assinado. O conselho que deveria aprová-lo não existe. O que vocês recomendam que aconteça agora?</li>
       </ol>
     </div>
   </div>
+</div>
 
-  <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G3: Deadlock Societário</span>
-    <h3>Impasse sobre contrato de R$ 12 M com cooperativa agrícola gaúcha</h3>
-    <p>A <strong>Coopsul</strong> (Cooperativa Agropecuária Sul) propôs um contrato de monitoramento de silos e maquinário em 340 propriedades rurais do RS: R$ 12 M em 5 anos. Rafael é favorável; Thiago considera o projeto arriscado demais (escopo novo, alto investimento em hardware). Com 50/50 na decisão executiva, a empresa está em deadlock. O Criatec3 tem direito de desempate apenas em casos de impasse formalmente registrado.</p>
-    <div class="box box-info"><strong>Dilema de governança</strong>O acordo de sócios não prevê mecanismo claro de resolução de impasses operacionais. A empresa pode perder uma oportunidade de R$ 12 M por ausência de regras de decisão.</div>
-    <div class="discussion-qs">
-      <h4>Questões para discussão</h4>
-      <ol>
-        <li>O que é um deadlock societário e quais mecanismos contratuais podem preveni-lo?</li>
-        <li>Qual o papel do acordo de sócios (shareholders' agreement) na definição de processos decisórios?</li>
-        <li>Quando é recomendável acionar o investidor como árbitro de impasses estratégicos?</li>
-      </ol>
-    </div>
+<!-- ════════════════════════════════════════
+     P3
+════════════════════════════════════════ -->
+<div id="p3" class="page">
+  <a href="#" class="btn-home" onclick="show('governanca',null);return false;">← Voltar aos Problemas</a>
+  <div class="desafio-header" style="background:linear-gradient(135deg,#1E2235,#3B82F6);">
+    <span class="desafio-grupo-label">Grupo 3</span>
+    <h1>Os Números que Ninguém Havia Somado</h1>
   </div>
 
-  <div class="gov-scenario">
-    <span class="scenario-tag tag-g">G4: Lacuna Salarial de Gênero</span>
-    <h3>Mulheres ganham entre 22% e 35% menos em funções equivalentes</h3>
-    <p>Diagnóstico interno encomendado pelo Criatec3 revelou que, em funções equivalentes de suporte técnico e gestão de projetos, mulheres na SensorTech recebem entre 22% e 35% menos que homens. A empresa nunca publicou relatório de equidade salarial. A <strong>Lei nº 14.611/2023</strong> (Igualdade Salarial) obriga empresas com mais de 100 funcionários: a SensorTech ainda está abaixo: mas a Criatec3 usa o indicador como critério ESG de portfólio.</p>
-    <div class="box box-warn"><strong>Impacto</strong>À medida que a empresa cresce rumo a 100+ funcionários, o risco jurídico torna-se iminente. A lacuna também corrói a cultura e compromete o recrutamento no mercado de TI gaúcho.</div>
-    <div class="discussion-qs">
-      <h4>Questões para discussão</h4>
+  <div class="desafio-context">
+    <p>Maria Fernanda passou duas semanas analisando a folha de pagamento da SensorTech antes de dizer qualquer coisa a Rafael. Ela queria ter certeza do que estava vendo.</p>
+    <p>Estava.</p>
+    <p>Em funções equivalentes de suporte técnico e gestão de projetos, as oito mulheres da empresa recebiam entre 22% e 35% menos do que os colegas homens nas mesmas posições. Não havia nenhuma justificativa documentada para nenhuma dessas diferenças. Nenhuma avaliação de desempenho que explicasse a divergência. Nenhum critério registrado em lugar algum.</p>
+    <p>Ela montou uma planilha. Colocou os nomes em colunas, os cargos, os salários, o tempo de casa, as últimas avaliações disponíveis. Depois imprimiu e foi até Rafael.</p>
+    <p>Ele olhou a planilha por um tempo sem falar. Depois disse que as contratações haviam sido feitas em momentos diferentes, que o mercado de tecnologia era volátil, que cada negociação tinha sua história.</p>
+    <p>Maria Fernanda apontou para dois nomes na mesma linha. Mesma função, mesmo tempo de casa, avaliações equivalentes. A diferença salarial era de 31%.</p>
+    <p>Rafael ficou em silêncio.</p>
+    <p>"Quando o Criatec3 pediu o diagnóstico de pessoas no ano passado", disse Maria Fernanda, "o que vocês enviaram?"</p>
+    <p>Rafael abriu o notebook e procurou o arquivo. Encontrou um relatório de duas páginas com headcount, turnover e custo de folha. Passou para ela.</p>
+    <p>Ela leu rapidamente e devolveu sem comentário.</p>
+    <p>O relatório não mencionava nenhum dado desagregado por gênero.</p>
+  </div>
+
+  <div class="gov-scenario" style="background:#F8FAFC;">
+    <h3 style="margin-bottom:20px;">Sua tarefa</h3>
+    <p style="margin-bottom:20px;color:#64748B;font-size:14px;">O Criatec3 contratou vocês para resolver o problema que aquela planilha expôs. O grupo deve entregar uma proposta com três decisões:</p>
+    <div class="discussion-qs" style="background:transparent;padding:0;">
       <ol>
-        <li>Como a Lei 14.611/2023 muda o ônus da prova em casos de desigualdade salarial?</li>
-        <li>Que indicadores de equidade salarial a SensorTech deveria monitorar e publicar?</li>
-        <li>Como o Criatec3 pode usar sua posição de investidor para forçar correções?</li>
+        <li>Que instância ou pessoa dentro da SensorTech deveria ter detectado essa situação? Maria Fernanda? O que estava faltando na estrutura da empresa?</li>
+        <li>A SensorTech nunca definiu critérios claros para remuneração. Desenhem uma estrutura, em linguagem direta, que qualquer gestor entenda e consiga aplicar.</li>
+        <li>A diferença salarial existe hoje, afeta oito pessoas e não tem justificativa documentada. O que vocês recomendam que aconteça agora?</li>
       </ol>
     </div>
   </div>
